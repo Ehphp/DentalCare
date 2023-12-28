@@ -1,0 +1,39 @@
+.heroSection {
+    position: relative;
+    top: 0vh;
+    height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.heroSectionImg {
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
+    transition: transform 2s ease; /* Durata di ritorno più rapida */
+    position: absolute;
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    transition: left 1.0s ease-out, transform 1s ease, opacity 1s ease;
+}
+
+.heroSectionImg.active {
+    left: 0;
+    opacity: 1;
+    transform: scale(1); /* Stato iniziale ingrandito */
+}
+
+.heroSectionImg:hover {
+    transform: scale(1.3);
+    transition-duration: 3s; /* Durata più lunga per l'animazione di hover */
+}

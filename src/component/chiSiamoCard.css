@@ -1,0 +1,205 @@
+
+.chiSiamoContainer {
+    width: 60vw;
+    max-width: 80vw;
+    height: 100vh;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    height: fit-content;
+    max-height: fit-content;
+    width: 800px;
+    max-width: 800px;
+    overflow: hidden; /* nasconde le slide non attive */
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.slider-items {
+    display: flex; /* allinea le card in orizzontale */
+    flex-direction: row;
+    align-items: center;
+    transition: transform 0.5s ease-in-out; /* transizione fluida tra le slide */
+    
+}
+
+.card {
+    flex: 0 0 100%; /* ogni card occupa il 100% dello slider */
+    opacity: 0; /* nasconde inizialmente tutte le card */
+    transition: opacity 0.3s ease-in-out; /* transizione fluida per l'opacità */
+    transition: transform 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ombra leggera per profondità */
+    background-color: #A5C4D4;
+    display: flex;    
+    align-items: center;
+    border-radius: 40px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Font moderno e pulito */
+
+    color: rgb(7, 66, 66);
+
+
+}
+.h1  {
+    color: rgb(195, 223, 244);
+}
+.h3 {
+    color: rgb(195, 223, 244);
+}
+.card.active {
+    opacity: 1; /* rende visibile la card attiva */
+   
+}
+
+.cardHover{
+    background-color: #FF928B ;
+    color: white;
+    
+}
+
+.cardSx{
+    margin-left: 50px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.imgStaff {
+    width: 150px;/* larghezza massima per l'immagine */
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid  #A9FDAC;
+    text-align: center; /* allinea l'immagine al centro */
+}
+
+.imgStaff img {
+    max-width: 100%; /* rende l'immagine responsive */
+    height: auto; /* mantiene il rapporto dell'immagine */
+}
+
+.infoStaff {
+    padding: 50px; /* spazio intorno al testo */
+    text-align: right; /* allinea il testo al centro */
+} 
+.infoStaff h1 {
+
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.5em; /* Spazio sotto il titolo */
+}
+
+.infoStaff p {
+    line-height: 1.6;
+    color: transparent;
+    color: rgb(82, 89, 93);
+    transition: color 0.3s ease-in-out;
+}
+
+
+.infoStaff p:hover{
+   color: rgb(13, 123, 123); /* Cambia colore all'hover */
+
+}
+
+
+
+.dots {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #888; /* Colore diverso per il punto attivo */
+}
+/* Aggiungi qui eventuali stili per il responsive o personalizzazioni */
+
+
+@media screen and (max-width: 1426px){
+.slider {
+    height: 500px;
+    max-height: 500px;
+    width: 600px;
+    max-width: 600px;
+    overflow: hidden; /* nasconde le slide non attive */
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 255, 255, 0);
+
+}
+.infoStaff p {
+    line-height: 1.1;
+    color:  rgb(7, 66, 66) ;
+
+}
+.infoStaff p:hover{
+   color: rgb(13, 123, 123); /* Cambia colore all'hover */
+
+}
+}
+
+
+
+@media screen and (max-width: 600px){
+    .slider{
+            height: fit-content;
+    max-height: fit-content;
+    }
+.card {
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.card.active{
+    height: fit-content;
+    max-height: 70vh;
+    color: rgb(213, 252, 255);
+}
+.cardSx{
+    margin: 0;
+    display: flex;
+}
+.infoStaff{
+    margin: 15px;
+    padding: 0;
+}
+.infoStaff p {
+    line-height: 1.1;
+    background: linear-gradient(to right, #0575e6, #4d6fea);
+    -webkit-background-clip: text;
+    text-align: justify;
+}
+.infoStaff h1{
+    width: fit-content;
+    text-align: center;
+}
+.cardSx{
+    margin-top: 2vh;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+}

@@ -1,0 +1,81 @@
+
+
+ .appointment-form {
+        position: absolute;
+    margin-top: 25vh;
+    margin-right: 30vw;
+    margin-bottom: 10vh;
+ 
+  background-color: #ffffff00; /* Sfondo bianco come l'immagine */
+  padding: 2em;
+  border-radius: 10px; /* Bordi arrotondati */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.263); /* Ombra leggera per dare profondità */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Font moderno e pulito */
+  color: #333333; /* Testo scuro per contrasto */
+  max-width: 300px; /* Larghezza massima per il form */
+  z-index: 99;
+  transition: transform 0.5s;
+}
+
+ .appointment-form:hover{
+
+    background-color: #ffffff10;
+    transform: scale(1.1);
+ }
+.appointment-form input,
+.appointment-form textarea {
+  width: calc(100% - 2em); /* Larghezza piena con padding */
+  padding: 1em 1em; /* Padding per gli input */
+  margin-bottom: 1em; /* Spazio tra gli input */
+  border: 1px solid #dddddd; /* Bordo sottile */
+  border-radius: 20px; /* Angoli molto arrotondati */
+  background-color: #f8f8f8; /* Sfondo chiaro per gli input */
+  box-sizing: border-box;
+  transition: all 0.3s ease; /* Transizione fluida per gli stati focus e hover */
+}
+
+.appointment-form input:focus,
+.appointment-form textarea:focus {
+  border-color: #30cfd0; /* Colore turchese come il sito per lo stato di focus */
+  background-color: #e0f7fa; /* Sfondo leggermente colorato al focus */
+  outline: none;
+}
+
+.appointment-form button {
+  width: 100%; /* Larghezza piena per il bottone */
+  padding: 0.7em 1em; /* Padding comodo per il bottone */
+  border: none;
+  border-radius: 20px; /* Angoli arrotondati per il bottone */
+  background-color: #9dd4b3; /* Turchese come il sito */
+  color: #ffffff; /* Testo bianco */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transizione fluida per il hover */
+}
+
+.appointment-form button:hover {
+  background-color: #7bcf9c; /* Colore leggermente più scuro al passaggio del mouse */
+}
+
+/* Placeholder con opacità per un look più leggero */
+::placeholder {
+  color: #999999;
+  opacity: 1; /* Opacità piena per i browser che riducono l'opacità di default */
+}
+
+/* Stile responsivo per adattarsi a schermi più piccoli */
+@media (max-width: 700px) {
+
+.appointment-form{
+    position: absolute;
+    margin: auto ;
+    top: 33%;
+    z-index: 99;
+    width: 70vw;
+}
+  .appointment-form input,
+  .appointment-form textarea,
+  .appointment-form button {
+    padding: 0.5em 1em;
+  }
+}

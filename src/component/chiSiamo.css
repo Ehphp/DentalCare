@@ -1,0 +1,15 @@
+.chiSiamoSection {
+    position: relative;
+    width: 100vw;
+    height: fit-content;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    background-color: #FF928B;
+}
+.hoveredClass{
+    background-color: #A5C4D4;
+    color: aliceblue;
+}

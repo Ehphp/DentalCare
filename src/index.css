@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  height: 100vh;
+  max-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+background-color: #a1d6e200;
+}
+
+/* Stili di base per body */
+
+
+/* Smartphone */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; /* Testo ridotto per smartphone */
+  }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px; /* Testo moderato per tablet */
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  body {
+    /* Gli stili di base per body sono già impostati per i desktop */
+    font-size: 18px; /* Testo ottimizzato per desktop */
+  }
+}

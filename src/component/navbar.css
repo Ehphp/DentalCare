@@ -1,0 +1,65 @@
+
+.nav {
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  background-color: rgba(175, 206, 211, 0.554); /* Sfondo trasparente */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font moderno e pulito */
+    z-index: 99;
+    padding-bottom: 0px;
+border-bottom: 0.5px solid rgb(123, 145, 147);
+border-radius: 0px 0px 25px 25px;
+}
+
+.nav:hover{
+    background-color: rgba(207, 236, 240, 0.718); /* Sfondo trasparente */
+
+}
+
+.nav h1 a {
+  color: #30cfd0; /* Colore coordinato con l'immagine */
+  font-size: 2.5rem; /* Dimensione del font aumentata */
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(#ffffff) ;
+  margin-left: 5vw;
+  text-decoration: none;
+  z-index: 99;
+  
+}
+
+.nav .link ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav .link li {
+  margin: 0 1rem;
+}
+
+.nav .link a {
+  text-decoration: none;
+  color: #5f5f5f; /* Colore del testo per i link */
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.3s;
+}
+
+.nav .link a:hover,
+.nav .link a:focus {
+  color: #30cfd0; /* Colore al hover o focus come il logo */
+}
+
+/* Risposta ai cambiamenti della dimensione dello schermo */
+@media (max-width: 1000px) {
+.nav{
+  display: none;
+}
+.link {
+  display: none;
+}
+}

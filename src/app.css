@@ -1,0 +1,7 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+background: linear-gradient(0deg, hsla(4, 100%, 77%, 1) 19%, hsla(171, 55%, 83%, 1) 100%);
+}

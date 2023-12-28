@@ -1,0 +1,61 @@
+.orariDiv {
+    max-width: 100%; /* Adatta questa larghezza in base al layout della tua pagina */
+    font-family: 'Arial', sans-serif; /* Sostituisci con il font del tuo sito */
+    color: #333;
+    background-color: #ffffff; /* O un altro colore leggero del tuo schema */
+    padding: 20px;
+    border-radius: 8px; /* Bordo arrotondato per la card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra leggera per la profondità */
+}
+
+.orariDiv h2 {
+    text-align: center;
+    color: #005f73;
+    margin-bottom: 24px; /* Spazio maggiore sopra la tabella */
+}
+
+.orari table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+}
+
+.orari th,
+.orari td {
+    text-align: right;
+    padding: 16px; /* Più spazio per un aspetto più arioso */
+    border-bottom: 2px solid #f0f0f0; /* Bordi sottili per le righe */
+}
+
+.orari th {
+    background-color: #007f8f; /* Un blu che si abbina al tuo colore principale */
+    color: #ffffff;
+    font-size: 1em; /* Mantieni la dimensione del font coerente per un aspetto pulito */
+    text-transform: uppercase; /* Lettere maiuscole per le intestazioni per un look più moderno */
+    letter-spacing: 1px; /* Spaziatura tra le lettere per le intestazioni */
+}
+
+.orari tr:last-child td {
+    border-bottom: none; /* Rimuovi il bordo inferiore dall'ultima riga */
+}
+
+.orari td {
+    color: #555; /* Un grigio più scuro per il testo per contrastare con lo sfondo */
+}
+
+.orari tbody tr:hover {
+    background-color: #e1eff6; /* Cambia il colore dello sfondo all'hover */
+    cursor: pointer; /* Cambia il cursore per indicare la possibilità di un'azione */
+}
+
+/* Stili per dispositivi mobile */
+@media (max-width: 600px) {
+    .phoneDetail {
+        padding: 10px;
+    }
+
+    .orari th, .orari td {
+        padding: 12px 10px; /* Minore spaziatura per schermi più piccoli */
+    }
+}
