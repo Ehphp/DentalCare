@@ -1,7 +1,9 @@
 import React from "react";
 import './card.css';
 
-function Card({ image = './logoContatti.png', title, subtitle }) {
+const defaultImage = process.env.PUBLIC_URL + '/logoContatti.PNG';
+
+function Card({ image = defaultImage, title, subtitle }) {
   return (
     <div className="card">
       <div className="card-content">
