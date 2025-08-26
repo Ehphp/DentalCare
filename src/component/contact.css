@@ -12,6 +12,19 @@ background-color: #A5C4D4;
 
 }
 
+.contact-layout{
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contact-layout > *{
+  flex: 1 1 300px;
+}
+
  h3, h4{
     font-size: 1.6rem;
     background: linear-gradient(to right, #1a4b7b, #5d8484);
@@ -35,10 +48,13 @@ h3:hover{
 
 
 @media  (max-width: 680px) {
-
   .contactContent{
         border-radius: 25px 25px 0 0 ;
+  }
 
+  .contact-layout{
+    flex-direction: column;
+    align-items: center;
   }
 }
 
