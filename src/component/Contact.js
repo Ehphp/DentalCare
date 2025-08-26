@@ -14,8 +14,12 @@ function Contact() {
 
         <section id="contact" className="contactContent">
             <div className="contact-layout">
-                <ContactInfo />
-                <FormHome />
+                <div className="contact-card">
+                    <ContactInfo />
+                </div>
+                <div className="contact-card">
+                    <FormHome />
+                </div>
             </div>
 
             <Map />
