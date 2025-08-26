@@ -25,7 +25,7 @@ background-color: #A5C4D4;
   flex: 1 1 300px;
 }
 
- h3, h4{
+ h2, h3{
     font-size: 1.6rem;
     background: linear-gradient(to right, #1a4b7b, #5d8484);
     -webkit-background-clip: text;
@@ -34,11 +34,11 @@ background-color: #A5C4D4;
     text-align: center;
     text-transform: uppercase;
 }
-h3:hover{
+h2:hover{
         background: linear-gradient(to right, #215c96, #7fb3b3);
     -webkit-background-clip: text;
 }
- h4:hover{
+ h3:hover{
       background: linear-gradient(to right, #215c96, #7fb3b3);
     -webkit-background-clip: text;
 
