@@ -19,10 +19,10 @@ function Contact() {
                 <ContactInfo />
                 <FormHome />
             </div>
-            <h3>
+            <h2>
                 vieni a trovarci presso la nostra nuova sede
-            </h3>
-            <h4>in via Corso Umberto I, 15</h4>
+            </h2>
+            <h3>in via Corso Umberto I, 15</h3>
             <Map />
         </section>
     );
