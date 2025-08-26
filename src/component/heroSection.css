@@ -107,3 +107,21 @@
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
+
+@media (max-width: 768px) {
+    .heroSection {
+        height: 70vh;
+    }
+
+    .heroContent {
+        padding: 0 0.5rem;
+    }
+
+    .heroContent h1 {
+        font-size: 2rem;
+    }
+
+    .heroContent p {
+        font-size: 1rem;
+    }
+}
