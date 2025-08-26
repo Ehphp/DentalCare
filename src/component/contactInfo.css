@@ -8,11 +8,9 @@
     align-items: center;
     justify-content: center;
     z-index: 90;
-    border-radius: 5% 5% 0 0;
     background-color: transparent;
-
-
-
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .contactDetails {

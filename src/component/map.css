@@ -13,9 +13,9 @@
 .mapContainer{
     border-radius: 5%;
     overflow: hidden;
-    height: 35vw;
-    width: 45vw;
-    max-width: 65vw;
+    width: 100%;
+    max-width: 45rem;
+    height: 400px;
 }
 
 .leaflet-top {
@@ -32,11 +32,8 @@
   }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
   .mapContainer{
       height: 300px;
-      max-height: 300px;
-      width: 300px;
-      max-width: 300px;
   }
 }
