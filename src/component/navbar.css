@@ -3,31 +3,34 @@
   width: 100vw;
   height: 10vh;
   position: fixed;
-  background-color: rgba(175, 206, 211, 0.554); /* Sfondo trasparente */
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgba(48, 207, 208, 0.7), rgba(51, 8, 103, 0.7));
+  backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font moderno e pulito */
-    z-index: 99;
-    padding-bottom: 0px;
-border-bottom: 0.5px solid rgb(123, 145, 147);
-border-radius: 0px 0px 25px 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  z-index: 99;
+  padding: 0 2rem;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0 0 25px 25px;
+  transition: background 0.3s ease;
 }
 
-.nav:hover{
-    background-color: rgba(207, 236, 240, 0.718); /* Sfondo trasparente */
-
+.nav:hover {
+  background: linear-gradient(90deg, rgba(48, 207, 208, 0.9), rgba(51, 8, 103, 0.9));
 }
 
 .nav h1 a {
-  color: #30cfd0; /* Colore coordinato con l'immagine */
-  font-size: 2.5rem; /* Dimensione del font aumentata */
+  font-size: 2.5rem;
   font-weight: bold;
-  text-shadow: 0 2px 4px rgba(#ffffff) ;
-  margin-left: 5vw;
   text-decoration: none;
+  background: linear-gradient(90deg, #30cfd0, #330867);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 0;
   z-index: 99;
-  
 }
 
 .nav-toggle {
@@ -37,6 +40,7 @@ border-radius: 0px 0px 25px 25px;
   font-size: 2rem;
   margin-right: 1rem;
   cursor: pointer;
+  color: #ffffff;
 }
 
 .nav .link {
@@ -56,20 +60,30 @@ border-radius: 0px 0px 25px 25px;
 
 .nav .link a {
   text-decoration: none;
-  color: #5f5f5f; /* Colore del testo per i link */
+  color: #f5f5f5;
   font-size: 1rem;
   padding: 0.25rem 0.5rem;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 .nav .link a:hover,
 .nav .link a:focus {
-  color: #30cfd0; /* Colore al hover o focus come il logo */
+  color: #ffffff;
 }
 
 .nav .link .cta {
   font-weight: bold;
-  color: #30cfd0;
+  background: linear-gradient(90deg, #30cfd0, #330867);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav .link .cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Risposta ai cambiamenti della dimensione dello schermo */
@@ -81,10 +95,11 @@ border-radius: 0px 0px 25px 25px;
     position: absolute;
     top: 10vh;
     right: 0;
-    background-color: rgba(175, 206, 211, 0.95);
+    background: linear-gradient(180deg, rgba(48, 207, 208, 0.95), rgba(51, 8, 103, 0.95));
     flex-direction: column;
     width: 200px;
     display: none;
+    padding: 1rem 0;
   }
   .nav .link.open {
     display: flex;

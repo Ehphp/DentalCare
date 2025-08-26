@@ -5,16 +5,18 @@ function Navbar() {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className='nav'>
+        <nav className="nav">
             <h1><a href="#home">DentalCare</a></h1>
             <button
                 className="nav-toggle"
                 aria-label="Apri menu"
+                aria-expanded={open}
+                aria-controls="nav-menu"
                 onClick={() => setOpen(!open)}
             >
                 &#9776;
             </button>
-            <div className={`link ${open ? 'open' : ''}`}>
+            <div id="nav-menu" className={`link ${open ? 'open' : ''}`}>
                 <ul>
                     <li><a href="#about">Chi Siamo</a></li>
                     <li><a href="#contact">Contatti</a></li>
