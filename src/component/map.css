@@ -1,6 +1,5 @@
 .mapDiv{
-    width: 65vw;
-    max-width: 65vw;
+  
     padding: 5vh;
     z-index: 90;
     background-color: transparent;
@@ -12,11 +11,10 @@
 }
 
 .mapContainer{
-    border-radius: 25%;
+    border-radius: 5%;
     overflow: hidden;
-    height: 65vw;
-    max-height: 65vw;
-    width: 65vw;
+    height: 35vw;
+    width: 45vw;
     max-width: 65vw;
 }
 

@@ -1,15 +1,13 @@
 
 
  .appointment-form {
-    position: relative;
-    margin: 25vh 0 10vh 0;
-    background-color: #ffffff00; /* Sfondo bianco come l'immagine */
+    background-color: #ffffff00; 
     padding: 2em;
     border-radius: 10px; /* Bordi arrotondati */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.263); /* Ombra leggera per dare profondità */
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Font moderno e pulito */
-    color: #333333; /* Testo scuro per contrasto */
-    max-width: 300px; /* Larghezza massima per il form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.263); 
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    color: #333333; 
+    max-width: 300px; 
     z-index: 99;
     transition: transform 0.5s;
 }
