@@ -14,8 +14,8 @@ function Contact() {
     return (
 
         <section id="contact" className="contactContent">
+            <ContactHero />
             <div className="contact-layout">
-                <ContactHero />
                 <ContactInfo />
                 <FormHome />
             </div>
