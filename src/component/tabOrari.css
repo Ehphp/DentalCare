@@ -49,6 +49,11 @@
     cursor: pointer; /* Cambia il cursore per indicare la possibilità di un'azione */
 }
 
+.current-day {
+    background-color: #e1eff6;
+    font-weight: bold;
+}
+
 /* Stili per dispositivi mobile */
 @media (max-width: 600px) {
     .phoneDetail {

@@ -19,12 +19,6 @@ function TabOrari() {
 
     const orarioOggi = orari.find(orario => orario.giornoNumero === giornoSettimana);
 
-    if (orarioOggi) {
-        console.log(`Oggi è ${orarioOggi.giorno}, Apertura: ${orarioOggi.apertura}, Chiusura: ${orarioOggi.chiusura}`);
-    } else {
-        console.log("Orario non trovato per oggi.");
-    }
-
     return (
         <div className="orariDiv">
             <div className="orari">
@@ -38,7 +32,7 @@ function TabOrari() {
                     </thead>
                     <tbody>
                         {orari.map((orario, index) => (
-                            <tr key={index}>
+                            <tr key={index} className={orario.giornoNumero === giornoSettimana ? 'current-day' : ''}>
                                 <td>{orario.giorno}</td>
                                 <td>{orario.apertura}</td>
                                 <td>{orario.chiusura}</td>

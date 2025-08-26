@@ -1,20 +1,17 @@
 
 
  .appointment-form {
-        position: absolute;
-    margin-top: 25vh;
-    margin-right: 30vw;
-    margin-bottom: 10vh;
- 
-  background-color: #ffffff00; /* Sfondo bianco come l'immagine */
-  padding: 2em;
-  border-radius: 10px; /* Bordi arrotondati */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.263); /* Ombra leggera per dare profondità */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Font moderno e pulito */
-  color: #333333; /* Testo scuro per contrasto */
-  max-width: 300px; /* Larghezza massima per il form */
-  z-index: 99;
-  transition: transform 0.5s;
+    position: relative;
+    margin: 25vh 0 10vh 0;
+    background-color: #ffffff00; /* Sfondo bianco come l'immagine */
+    padding: 2em;
+    border-radius: 10px; /* Bordi arrotondati */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.263); /* Ombra leggera per dare profondità */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Font moderno e pulito */
+    color: #333333; /* Testo scuro per contrasto */
+    max-width: 300px; /* Larghezza massima per il form */
+    z-index: 99;
+    transition: transform 0.5s;
 }
 
  .appointment-form:hover{
@@ -65,17 +62,24 @@
 
 /* Stile responsivo per adattarsi a schermi più piccoli */
 @media (max-width: 700px) {
-
-.appointment-form{
-    position: absolute;
-    margin: auto ;
-    top: 33%;
-    z-index: 99;
-    width: 70vw;
-}
+  .appointment-form{
+      position: relative;
+      margin: 5vh auto;
+      width: 70vw;
+  }
   .appointment-form input,
   .appointment-form textarea,
   .appointment-form button {
     padding: 0.5em 1em;
   }
+}
+
+.form-success {
+  color: #2e7d32;
+  margin-top: 0.5em;
+}
+
+.form-error {
+  color: #c62828;
+  margin-top: 0.5em;
 }
