@@ -1,9 +1,8 @@
-
 .logoContatti {
     position: relative;
     width: 60vw;
     height: 40vh;
-    max-width: 100vw; 
+    max-width: 100vw;
     flex: 3;
     display: flex;
     flex-direction: column;
@@ -11,22 +10,3 @@
     overflow: hidden;
     margin-top: 3vh;
 }
-.cardImgDiv{background-color: white;}
-
-.logoContatti h3{
-    font-size: 1.6rem;
-    background: linear-gradient(to right, #1a4b7b, #5d8484);
-    -webkit-background-clip: text;
-    color: transparent;
-    z-index: 90;
-}
-.logoContatti p {
-    text-align: center; /* Allineamento del testo */
-    margin: 10px 0; /* Spaziatura verticale */
-    color: #394f4f;
-    z-index: 90;
-
-}
-
-
-
