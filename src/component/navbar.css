@@ -3,18 +3,15 @@
   width: 100vw;
   height: 10vh;
   position: fixed;
-  top: 0;
-  left: 0;
+
   background: linear-gradient(90deg, rgba(48, 207, 208, 0.7), rgba(51, 8, 103, 0.7));
   backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  z-index: 99;
-  padding: 0 2rem;
+  z-index: 100;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
-  border-radius: 0 0 25px 25px;
   transition: background 0.3s ease;
 }
 
@@ -26,11 +23,12 @@
   font-size: 2.5rem;
   font-weight: bold;
   text-decoration: none;
-  background: linear-gradient(90deg, #30cfd0, #330867);
+  background: linear-gradient(90deg, #038c8c, #330867);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-left: 0;
   z-index: 99;
+  margin-left: 5vw;
 }
 
 .nav-toggle {
