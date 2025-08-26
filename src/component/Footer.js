@@ -17,7 +17,7 @@ function Footer() {
                 </a>
             </div>
             <div className="copyright">
-                <p>&copy; {new Date().getFullYear()} Il Tuo Nome o Società. Tutti i diritti riservati.</p>
+                <p>&copy; {new Date().getFullYear()} DentalCare. Tutti i diritti riservati.</p>
             </div>
         </div>
     );

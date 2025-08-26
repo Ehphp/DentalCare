@@ -15,151 +15,20 @@
 
 
 }
-.callUsDivSopra {
 
-    width: fit-content;
-    height: fit-content;
-    width: 50vw;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-        background-color: transparent;
-
-} 
-.callUsDivSottoEmail {
-
-flex:1;
-display: flex;
-align-items: center;
-justify-content: center;
-width: 50vw;
-margin: auto;
-
-} 
-.callUsDivSottoPhone{
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Font moderno e pulito */
-}
-.callUsDivSottoPhone p{
-    padding: 1.5rem;
-    border-radius: 20px;
-}
-.callUsDivSottoPhone p:hover{
-    padding: 1.5rem;
-    background-color: #c2cdd3ab;
-
-}
-.appointment-form-contact {
-    position: relative;
-    background-color: #ffffff00; /* Sfondo bianco come l'immagine */
-    padding: 2em;
-    border-radius: 10px; /* Bordi arrotondati */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.263); /* Ombra leggera per dare profondità */
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Font moderno e pulito */
-    color: #333333; /* Testo scuro per contrasto */
-    max-width: 300px; /* Larghezza massima per il form */
-    z-index: 99;
-    transition: transform 0.5s;
+.contactDetails {
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.appointment-form-contact:hover {
-    background-color: #c2cdd3;
-    transform: scale(1.1);
+.contactDetails a {
+    color: #005f73;
+    text-decoration: none;
 }
 
-.appointment-form-contact input,
-.appointment-form-contact textarea {
-    width: calc(100% - 1em); /* Larghezza piena con padding */
-    padding: 0.5em 0.5em; /* Padding per gli input */
-    margin-bottom: 1em; /* Spazio tra gli input */
-    border: 1px solid #dddddd; /* Bordo sottile */
-    border-radius: 20px; /* Angoli molto arrotondati */
-    background-color: #f8f8f8; /* Sfondo chiaro per gli input */
-    box-sizing: border-box;
-    transition: all 0.3s ease; /* Transizione fluida per gli stati focus e hover */
-}
-
-.appointment-form-contact input:focus,
-.appointment-form-contact textarea:focus {
-    border-color: #30cfd0; /* Colore turchese come il sito per lo stato di focus */
-    background-color: #e0f7fa; /* Sfondo leggermente colorato al focus */
-    outline: none;
-}
-
-.appointment-form-contact button {
-    width: 100%; /* Larghezza piena per il bottone */
-    padding: 0.7em 1em; /* Padding comodo per il bottone */
-    border: none;
-    border-radius: 20px; /* Angoli arrotondati per il bottone */
-    background-color: #68c38d; /* Turchese come il sito */
-    color: #ffffff; /* Testo bianco */
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Transizione fluida per il hover */
-}
-
-.appointment-form-contact button:hover {
-    background-color: #76d49c; /* Colore leggermente più scuro al passaggio del mouse */
-}
-
-/* Placeholder con opacità per un look più leggero */
-::placeholder {
-    color: #999999;
-    opacity: 1; /* Opacità piena per i browser che riducono l'opacità di default */
-}
-
-/* Stile responsivo per adattarsi a schermi più piccoli */
-@media (max-width: 700px) {
-    .appointment-form-contact {
-        position: relative;
-        z-index: 99;
-        width: 70vw;
-    }
-    .appointment-form-contact input,
-    .appointment-form-contact textarea,
-    .appointment-form-contact button {
-        padding: 0.5em 1em;
-    }
-}
-
-
-.visible{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.visiblePhone{
-    display: flex;
-}
-
-.visibleEmail{
-    display: flex;
-}
-.divContatti{
-    width: fit-content;
-    max-width: 300px;
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    justify-content: space-between;
-}
-.hidden {
-    display: none;
-}
-.phoneIcon{
-    height: fit-content;
-    width: 140px;
-    object-fit: cover;
-
-}
-.mailIcon{
-    height: fit-content;
-    width: 170px;
-    object-fit: cover;
-  
+.contactDetails a:hover {
+    text-decoration: underline;
 }
 
 
