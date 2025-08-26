@@ -1,5 +1,6 @@
 import React from "react";
 import TabOrari from "./TabOrari";
+import { FaPhone, FaEnvelope } from "react-icons/fa";
 import './contactInfo.css';
 
 function ContactInfo() {
@@ -10,8 +11,12 @@ function ContactInfo() {
         <div className="contattiDx">
             <TabOrari />
             <div className="contactDetails">
-                <p><a href={`tel:${telefono}`}>{telefono}</a></p>
-                <p><a href={`mailto:${email}`}>{email}</a></p>
+                <p><FaPhone className="icon" />
+                    <a href={`tel:${telefono}`}>{telefono}</a>
+                </p>
+                <p><FaEnvelope className="icon" />
+                    <a href={`mailto:${email}`}>{email}</a>
+                </p>
             </div>
         </div>
     );

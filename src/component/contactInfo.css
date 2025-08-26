@@ -17,15 +17,31 @@
 
 .contactDetails {
     margin-top: 1rem;
-    text-align: center;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactDetails p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
 }
 
 .contactDetails a {
-    color: #005f73;
+    color: #330867;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .contactDetails a:hover {
     text-decoration: underline;
+    color: #30cfd0;
+}
+
+.contactDetails .icon {
+    color: #30cfd0;
 }
